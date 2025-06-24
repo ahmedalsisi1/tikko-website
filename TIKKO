@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tikko - العملة الرقمية الفاخرة</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="tikko-logo.png" type="image/png">
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="tikko-logo.png" alt="Tikko Logo" />
+    </div>
+    <h1 class="animated-title">Tikko</h1>
+    <div id="crypto-ticker">
+      <!-- سيتم ملء الأسعار من خلال JavaScript -->
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>في عالمٍ رقمي يعجُّ بالفوضى... ظهرت Tikko!</h2>
+      <p>عملة مصقولة بلون الذهب، وُلدت من نجم ساطع لتقودك إلى عالم شفاف ومستقر.</p>
+    </section>
+
+    <section class="features">
+      <h2>مميزات Tikko</h2>
+      <ul>
+        <li>⚡ سرعة تحويل عالية</li>
+        <li>💸 رسوم منخفضة</li>
+        <li>🔒 ندرة رقمية حقيقية</li>
+        <li>🤝 مجتمع داعم</li>
+        <li>🎨 تصميم فاخر</li>
+      </ul>
+    </section>
+
+    <section class="download-logo">
+      <h2>تحميل شعار Tikko</h2>
+      <a href="tikko-logo.png" download>📥 تحميل الشعار</a>
+    </section>
+
+    <section class="contact">
+      <h2>اتصل بنا</h2>
+      <form>
+        <input type="text" placeholder="اسمك" required />
+        <input type="email" placeholder="بريدك الإلكتروني" required />
+        <textarea placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+
+    <div id="google_translate_element"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tikko. كل الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'ar' }, 'google_translate_element');
+    }
+  </script>
+</body>
+</html>
