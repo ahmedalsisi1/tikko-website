@@ -1,45 +1,76 @@
 
 body {
-    background-color: #000;
-    color: gold;
-    font-family: 'Cairo', sans-serif;
-    margin: 0;
-    padding: 0;
-    direction: rtl;
+  background-color: #000;
+  color: #FFD700;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 header {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 40px 0;
 }
-.logo {
-    width: 100px;
-    animation: rotate 10s linear infinite;
+
+.rotating-logo {
+  width: 100px;
+  animation: rotate 5s linear infinite;
 }
-.logo-text {
-    font-size: 2.5em;
-    color: gold;
-    animation: glow 2s ease-in-out infinite alternate;
-}
-.intro {
-    font-style: italic;
-    font-size: 1.2em;
-}
-.section {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #111;
-    font-size: 0.9em;
-}
+
 @keyframes rotate {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
 }
-@keyframes glow {
-    from { text-shadow: 0 0 5px #bfa633; }
-    to { text-shadow: 0 0 20px gold; }
+
+.gold-text {
+  color: #FFD700;
+  text-shadow: 0 0 5px #FFD700;
+}
+
+.animated-text {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.roadmap {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tech-item {
+  background: #111;
+  border: 1px solid #FFD700;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.crypto-container {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background: #111;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
