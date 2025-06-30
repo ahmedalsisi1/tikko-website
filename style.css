@@ -1,28 +1,45 @@
 
 body {
     background-color: #000;
-    color: #FFD700;
-    font-family: Arial, sans-serif;
+    color: gold;
+    font-family: 'Cairo', sans-serif;
     margin: 0;
     padding: 0;
+    direction: rtl;
 }
-header, footer {
-    background-color: #111;
-    padding: 20px;
+header {
     text-align: center;
-}
-main {
     padding: 20px;
 }
-a {
-    color: #FFD700;
-    text-decoration: none;
+.logo {
+    width: 100px;
+    animation: rotate 10s linear infinite;
 }
-.gold {
-    color: #FFD700;
-    animation: shine 3s infinite alternate;
+.logo-text {
+    font-size: 2.5em;
+    color: gold;
+    animation: glow 2s ease-in-out infinite alternate;
 }
-@keyframes shine {
-    0% { text-shadow: 0 0 5px #FFD700; }
-    100% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700; }
+.intro {
+    font-style: italic;
+    font-size: 1.2em;
+}
+.section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    font-size: 0.9em;
+}
+@keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+@keyframes glow {
+    from { text-shadow: 0 0 5px #bfa633; }
+    to { text-shadow: 0 0 20px gold; }
 }
