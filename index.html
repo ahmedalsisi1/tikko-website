@@ -1,45 +1,47 @@
 
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tikko - العملة الذهبية</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Tikko | Official Website</title>
+    <style>
+        body {
+            background-color: #000;
+            color: gold;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+        }
+        nav a {
+            color: gold;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            width: 150px;
+            animation: spin 10s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Tikko Logo" class="logo" />
-            <h1 class="logo-text">Tikko</h1>
-        </div>
-        <p class="intro">عملة Tikko ليست مشروعًا بل مجتمعًا. لا تشتريها – كن أنت من يصنعها!</p>
+        <img src="tikko-logo.png" alt="Tikko Logo" class="logo">
+        <h1 style="animation: glow 2s infinite alternate;">Welcome to Tikko</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
-
-    <main>
-        <section class="section">
-            <h2>✨ القصة الخيالية الواقعية</h2>
-            <p>نزلت Tikko من السماء كقطعة ذهب مشعة... رمز بدون مشروع، لكنه مدعوم بإيمان مجتمع لا يُقهر. Tikko هي البوصلة للمستقبل المالي العادل.</p>
-        </section>
-
-        <section class="section">
-            <h2>💰 أسعار العملات المباشرة</h2>
-            <div id="prices">جاري تحميل الأسعار...</div>
-        </section>
-
-        <section class="section">
-            <h2>🌟 لماذا Tikko؟</h2>
-            <ul>
-                <li>✨ عملة بلا وعود – فقط طموح ودعم مجتمعي حقيقي</li>
-                <li>🚀 تصميم فاخر، شفاف، ومبني من الناس ولأجل الناس</li>
-                <li>📈 مستقبل مفتوح، لكل من يؤمن بالحرية المالية</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>جميع الحقوق محفوظة © 2025 Tikko.dev</p>
-    </footer>
+    <p>Tikko is the rising digital token for a new generation. Explore our pages to learn more.</p>
 </body>
 </html>
