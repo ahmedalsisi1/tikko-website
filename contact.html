@@ -1,1 +1,91 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Contact - Tikko</title><link rel='stylesheet' href='style.css'></head><body><header><h1 class='gold'>Contact Us</h1></header><main><p>For any inquiries: <a href='mailto:info@tikko.dev'>info@tikko.dev</a></p></main><footer><p>&copy; 2025 Tikko. All rights reserved.</p></footer></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Tikko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #000;
+            color: gold;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px gold; }
+            to { text-shadow: 0 0 20px gold, 0 0 30px gold; }
+        }
+        main {
+            padding: 30px;
+            max-width: 700px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 20px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #222;
+            border: 1px solid gold;
+            color: gold;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: gold;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Tikko</h1>
+    </header>
+    <main>
+        <p>We’d love to hear from you! Whether you have a question about Tikko, suggestions for our project, or need assistance — don’t hesitate to reach out.</p>
+        <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2025 Tikko Token. All rights reserved.
+    </footer>
+</body>
+</html>
