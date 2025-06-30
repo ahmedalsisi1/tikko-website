@@ -1,0 +1,73 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: gold;
+}
+header {
+  text-align: center;
+  padding: 20px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rotating-logo {
+  width: 100px;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+.animated-name {
+  font-size: 2em;
+  animation: shimmer 2s infinite linear;
+}
+@keyframes shimmer {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+nav a {
+  margin: 0 10px;
+  color: gold;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+.grid-animated {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+.grid-box {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid gold;
+  padding: 20px;
+  text-align: center;
+}
+.ticker {
+  overflow: hidden;
+  background: #111;
+  white-space: nowrap;
+}
+.ticker-content {
+  display: inline-block;
+  animation: ticker 20s linear infinite;
+}
+.ticker-content span {
+  display: inline-block;
+  padding: 0 30px;
+  font-weight: bold;
+}
+@keyframes ticker {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+    
