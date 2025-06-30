@@ -1,8 +1,7 @@
 
 async function fetchPrices() {
-  const container = document.getElementById("prices");
-  container.innerHTML = "جارٍ تحديث الأسعار...";
-
+  const container = document.getElementById("crypto-prices");
+  container.innerHTML = "Loading prices...";
   try {
     const res = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,terra-luna,pepe,shiba-inu&vs_currencies=usd");
     const data = await res.json();
@@ -15,7 +14,7 @@ async function fetchPrices() {
       <li>SHIBA: $${data["shiba-inu"].usd}</li>
     `;
   } catch (err) {
-    container.innerHTML = "حدث خطأ أثناء تحميل الأسعار.";
+    container.innerHTML = "Error loading prices.";
   }
 }
 
