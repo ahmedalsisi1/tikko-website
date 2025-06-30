@@ -1,35 +1,28 @@
 
 body {
-  background-color: #000;
-  color: gold;
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    background-color: #000;
+    color: #FFD700;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-header {
-  padding: 2em;
+header, footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
 }
-.logo {
-  width: 100px;
+main {
+    padding: 20px;
 }
-.title {
-  font-size: 3em;
-  margin: 0.2em 0;
+a {
+    color: #FFD700;
+    text-decoration: none;
 }
-.subtitle {
-  font-size: 1.2em;
-  color: #FFD700;
+.gold {
+    color: #FFD700;
+    animation: shine 3s infinite alternate;
 }
-.section {
-  padding: 2em;
-}
-.glow {
-  text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px orange;
-}
-footer {
-  margin-top: 2em;
-  padding: 1em;
-  font-size: 0.9em;
-  color: #aaa;
+@keyframes shine {
+    0% { text-shadow: 0 0 5px #FFD700; }
+    100% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700; }
 }
