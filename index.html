@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tikko - The Golden Community Coin</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Tikko - Official Cryptocurrency</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="main.js" defer></script>
 </head>
 <body>
   <header>
     <div class="logo-container">
       <img src="tikko-logo.png" alt="Tikko Logo" class="rotating-logo"/>
-      <h1 class="animated-text">TIKKO</h1>
+      <h1 class="animated-name">Tikko</h1>
     </div>
     <nav>
       <a href="index.html">Home</a>
@@ -22,36 +23,39 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>The Golden Digital Revolution</h2>
-      <p>Join the most ambitious crypto movement built by people, for the future.</p>
-    </section>
+  <section class="hero">
+    <h2>Welcome to Tikko</h2>
+    <p>A visionary digital asset powered by community. A symbol of trust, value, and limitless ambition.</p>
+    <div class="grid-animated">
+      <div class="grid-box">Smart Blockchain</div>
+      <div class="grid-box">Community Driven</div>
+      <div class="grid-box">Golden Future</div>
+      <div class="grid-box">Powerful Utility</div>
+    </div>
+  </section>
 
-    <section class="roadmap-section">
-      <h3>Technological Future Vision</h3>
-      <div class="tech-visuals">
-        <img src="images/planet.png" alt="Tikko Planet" class="animated-planet"/>
-        <img src="images/tech-elements.png" alt="Engineering Elements" class="animated-tech"/>
-      </div>
-      <p>
-        Our roadmap features a visionary, high-tech future. From community power to decentralized finance tools, Tikko aims to redefine how crypto evolves.
-      </p>
-    </section>
-  </main>
+  <section class="live-prices">
+    <h3>Live Crypto Prices</h3>
+    <div id="ticker-container"></div>
+  </section>
 
   <footer>
     <div class="ticker">
-      <marquee behavior="scroll" direction="left" scrollamount="4">
-        <img src="logos/tikko.png" alt="Tikko" /> TIKKO |
-        <img src="logos/bitcoin.png" alt="Bitcoin" /> BTC |
-        <img src="logos/ethereum.png" alt="Ethereum" /> ETH |
-        <img src="logos/bnb.png" alt="BNB" /> BNB |
-        <img src="logos/shiba.png" alt="SHIBA" /> SHIBA |
-        <img src="logos/pepe.png" alt="PEPE" /> PEPE |
-        <img src="logos/lunc.png" alt="LUNC" /> LUNC
-      </marquee>
+      <div class="ticker-content" id="footer-ticker">
+        <span>Tikko</span>
+        <span>Bitcoin</span>
+        <span>Ethereum</span>
+        <span>BNB</span>
+        <span>Shiba</span>
+        <span>LUNC</span>
+        <span>PEPE</span>
+        <span>Solana</span>
+        <span>Dogecoin</span>
+        <span>Toncoin</span>
+        <span>XRP</span>
+      </div>
     </div>
   </footer>
 </body>
 </html>
+    
