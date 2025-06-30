@@ -1,88 +1,45 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tikko Token</title>
-  <style>
-    body {
-      background-color: #000;
-      color: gold;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      padding: 30px 0;
-    }
-    img.logo {
-      width: 100px;
-      height: 100px;
-      animation: spin 5s linear infinite;
-    }
-    h1 {
-      font-size: 3em;
-      color: gold;
-      text-shadow: 0 0 20px gold;
-      margin: 10px 0;
-    }
-    p {
-      font-size: 1.2em;
-    }
-    .prices {
-      margin-top: 40px;
-      text-align: center;
-    }
-    .prices ul {
-      list-style: none;
-      padding: 0;
-    }
-    .prices li {
-      margin: 8px 0;
-    }
-    @keyframes spin {
-      0% { transform: rotateY(0deg); }
-      100% { transform: rotateY(360deg); }
-    }
-    footer {
-      background-color: #111;
-      color: gold;
-      padding: 10px 0;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      font-size: 0.9em;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tikko - العملة الذهبية</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="assets/tikko-logo.png" alt="Tikko Logo" class="logo"/>
-    <h1>Tikko</h1>
-    <p>Not a project... but a community. Don't buy it — be the one who builds it!</p>
-  </header>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Tikko Logo" class="logo" />
+            <h1 class="logo-text">Tikko</h1>
+        </div>
+        <p class="intro">عملة Tikko ليست مشروعًا بل مجتمعًا. لا تشتريها – كن أنت من يصنعها!</p>
+    </header>
 
-  <section>
-    <h2>✨ The Fictional Yet Realistic Story</h2>
-    <p>Tikko descended from the sky like a shining golden piece... a token with no project — yet backed by a community that believes. Tikko is the compass for a fair financial future.</p>
-  </section>
+    <main>
+        <section class="section">
+            <h2>✨ القصة الخيالية الواقعية</h2>
+            <p>نزلت Tikko من السماء كقطعة ذهب مشعة... رمز بدون مشروع، لكنه مدعوم بإيمان مجتمع لا يُقهر. Tikko هي البوصلة للمستقبل المالي العادل.</p>
+        </section>
 
-  <section class="prices">
-    <h2>💰 Live Crypto Prices</h2>
-    <ul>
-      <li>Bitcoin (BTC): $107410</li>
-      <li>Ethereum (ETH): $2496.78</li>
-      <li>BNB: $658.56</li>
-      <li>LUNC: $0.0000562</li>
-      <li>PEPE: $0.00000986</li>
-      <li>SHIBA: $0.0000143</li>
-    </ul>
-  </section>
+        <section class="section">
+            <h2>💰 أسعار العملات المباشرة</h2>
+            <div id="prices">جاري تحميل الأسعار...</div>
+        </section>
 
-  <footer>
-    © 2025 Tikko. All rights reserved.
-  </footer>
+        <section class="section">
+            <h2>🌟 لماذا Tikko؟</h2>
+            <ul>
+                <li>✨ عملة بلا وعود – فقط طموح ودعم مجتمعي حقيقي</li>
+                <li>🚀 تصميم فاخر، شفاف، ومبني من الناس ولأجل الناس</li>
+                <li>📈 مستقبل مفتوح، لكل من يؤمن بالحرية المالية</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2025 Tikko.dev</p>
+    </footer>
 </body>
 </html>
