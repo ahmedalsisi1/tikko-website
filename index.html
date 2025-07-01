@@ -4,58 +4,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tikko - Official Cryptocurrency</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <script src="main.js" defer></script>
+  <title>Tikko Features</title>
+  <style>
+    body {
+      background-color: #000;
+      color: gold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .feature {
+      background: #111;
+      border: 2px solid gold;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px gold;
+      position: relative;
+      animation: shake 1.5s infinite;
+    }
+
+    .feature img {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    .feature h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+
+    .feature p {
+      font-size: 14px;
+    }
+
+    .spark {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: gold;
+      border-radius: 50%;
+      animation: spark 0.5s infinite;
+    }
+
+    .spark:nth-child(1) {
+      top: 10%;
+      left: 10%;
+    }
+
+    .spark:nth-child(2) {
+      top: 80%;
+      left: 80%;
+    }
+
+    .spark:nth-child(3) {
+      top: 50%;
+      left: 90%;
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(1deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-1deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes spark {
+      0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.5);
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="tikko-logo.png" alt="Tikko Logo" class="rotating-logo"/>
-      <h1 class="animated-name">Tikko</h1>
+  <div class="grid">
+    <div class="feature">
+      <img src="community.png" alt="Community">
+      <h2>Driven by the Community</h2>
+      <p>Our strong community powers Tikko's journey, bringing life and purpose to our vision.</p>
+      <div class="spark"></div><div class="spark"></div><div class="spark"></div>
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="roadmap.html">Roadmap</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Welcome to Tikko</h2>
-    <p>A visionary digital asset powered by community. A symbol of trust, value, and limitless ambition.</p>
-    <div class="grid-animated">
-      <div class="grid-box">Smart Blockchain</div>
-      <div class="grid-box">Community Driven</div>
-      <div class="grid-box">Golden Future</div>
-      <div class="grid-box">Powerful Utility</div>
+    <div class="feature">
+      <img src="blockchain.png" alt="Blockchain">
+      <h2>Smart Blockchain</h2>
+      <p>Built on secure blockchain technology, Tikko ensures transparency and efficiency.</p>
+      <div class="spark"></div><div class="spark"></div><div class="spark"></div>
     </div>
-  </section>
-
-  <section class="live-prices">
-    <h3>Live Crypto Prices</h3>
-    <div id="ticker-container"></div>
-  </section>
-
-  <footer>
-    <div class="ticker">
-      <div class="ticker-content" id="footer-ticker">
-        <span>Tikko</span>
-        <span>Bitcoin</span>
-        <span>Ethereum</span>
-        <span>BNB</span>
-        <span>Shiba</span>
-        <span>LUNC</span>
-        <span>PEPE</span>
-        <span>Solana</span>
-        <span>Dogecoin</span>
-        <span>Toncoin</span>
-        <span>XRP</span>
-      </div>
+    <div class="feature">
+      <img src="tikko_logo.png" alt="Tikko Logo">
+      <h2>Powerful Tool</h2>
+      <p>Starting from scratch, Tikko has grown into a powerful and versatile financial tool.</p>
+      <div class="spark"></div><div class="spark"></div><div class="spark"></div>
     </div>
-  </footer>
+    <div class="feature">
+      <img src="future.png" alt="Golden Future">
+      <h2>Golden Future</h2>
+      <p>With community support, Tikko is on the path to a shining and prosperous future.</p>
+      <div class="spark"></div><div class="spark"></div><div class="spark"></div>
+    </div>
+  </div>
 </body>
 </html>
-    
