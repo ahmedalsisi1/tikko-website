@@ -2,50 +2,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Live Crypto Prices</title>
-  <style>
-    body {
-      background-color: black;
-      color: gold;
-      font-family: Arial, sans-serif;
-    }
-    #crypto-bar {
-      display: flex;
-      gap: 1.5rem;
-      overflow-x: auto;
-      padding: 20px;
-      border-top: 2px solid gold;
-      border-bottom: 2px solid gold;
-      animation: scroll 20s linear infinite;
-    }
-    #crypto-bar div {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(255, 215, 0, 0.1);
-      padding: 10px;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-    #crypto-bar div:hover {
-      transform: scale(1.1);
-      background: rgba(255, 215, 0, 0.3);
-    }
-    img {
-      width: 24px;
-      height: 24px;
-    }
-    @keyframes scroll {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tikko - Official Cryptocurrency</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="main.js" defer></script>
 </head>
 <body>
-  <h2 style="text-align:center;">Live Cryptocurrency Prices</h2>
-  <div id="crypto-bar"></div>
+  <header>
+    <div class="logo-container">
+      <img src="tikko-logo.png" alt="Tikko Logo" class="rotating-logo"/>
+      <h1 class="animated-name">Tikko</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <script src="script.js"></script>
+  <section class="hero">
+    <h2>Welcome to Tikko</h2>
+    <p>A visionary digital asset powered by community. A symbol of trust, value, and limitless ambition.</p>
+    <div class="grid-animated">
+      <div class="grid-box">Smart Blockchain</div>
+      <div class="grid-box">Community Driven</div>
+      <div class="grid-box">Golden Future</div>
+      <div class="grid-box">Powerful Utility</div>
+    </div>
+  </section>
+
+  <section class="live-prices">
+    <h3>Live Crypto Prices</h3>
+    <div id="ticker-container"></div>
+  </section>
+
+  <footer>
+    <div class="ticker">
+      <div class="ticker-content" id="footer-ticker">
+        <span>Tikko</span>
+        <span>Bitcoin</span>
+        <span>Ethereum</span>
+        <span>BNB</span>
+        <span>Shiba</span>
+        <span>LUNC</span>
+        <span>PEPE</span>
+        <span>Solana</span>
+        <span>Dogecoin</span>
+        <span>Toncoin</span>
+        <span>XRP</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
+    
