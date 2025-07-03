@@ -1,0 +1,26 @@
+
+.container {
+  background-color: #000;
+  color: gold;
+  min-height: 100vh;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  max-width: 800px;
+  margin: auto;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px gold;
+}
+
+.text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}

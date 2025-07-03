@@ -1,0 +1,18 @@
+
+.navbar {
+  background-color: #000;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar a {
+  color: gold;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fff700;
+}
