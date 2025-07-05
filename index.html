@@ -2,27 +2,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tikko Auto Translate</title>
-    <script>
-        (function() {
-            const userLang = navigator.language || navigator.userLanguage;
-            const supportedLanguages = ['ar', 'tr', 'fr', 'es', 'de', 'zh', 'ru'];
-            const baseLang = 'en';
-
-            if (userLang.startsWith(baseLang)) return;
-
-            const langCode = userLang.split('-')[0];
-            if (supportedLanguages.includes(langCode)) {
-                const currentUrl = window.location.href;
-                const googleTranslateUrl = "https://translate.google.com/translate?hl=" + langCode + "&sl=" + baseLang + "&tl=" + langCode + "&u=" + encodeURIComponent(currentUrl);
-                window.location.href = googleTranslateUrl;
-            }
-        })();
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tikko Pay - Secure Digital Payments</title>
+  <style>
+    body {
+      background-color: #000;
+      color: gold;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: gold;
+    }
+    ul {
+      list-style-type: "🚀 ";
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: gold;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Tikko</h1>
-    <p>This page will auto-translate to your browser's language.</p>
+  <h1>🔐 Tikko Pay - Your Secure Path to Digital Payments</h1>
+  <p>Tikko is not just a payment method; it's a fully integrated system backed by transparency and community-driven liquidity. Tikko Pay aims to empower people around the world to handle their daily transactions with ease, security, and flexibility.</p>
+
+  <h2>🚀 Our Future Vision Includes:</h2>
+  <ul>
+    <li>Integration of Tikko Pay in e-commerce apps to allow Tikko payments via digital cards</li>
+    <li>Support for decentralized wallets on mobile and hardware devices</li>
+    <li>Real partnerships with major global payment platforms</li>
+  </ul>
+
+  <p>💡 Transparency is the foundation of Tikko Pay: All transactions are recorded on the blockchain and are publicly verifiable.</p>
+  <p>Join Tikko today and become part of the currency that's building a transparent future with the power of community.</p>
+
+  <footer>© 2025 Tikko. All rights reserved.</footer>
 </body>
 </html>
