@@ -1,18 +1,15 @@
 
-import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Faq.module.css'
 
 export default function FAQ() {
   return (
-    <>
-      <Head>
-        <title>FAQ | Tikko</title>
-      </Head>
-      <main className={styles.container}>
-        <img src="/assets/tikko-logo.jpg" alt="Tikko Logo" className={styles.logo} />
-        <h1>Frequently Asked Questions</h1>
-        <p>Tikko is a visionary digital asset backed by community. A golden future awaits.</p>
-      </main>
-    </>
+    <div className={styles.container}>
+      <div className={styles.logoWrapper}>
+        <Image src="/logo.png" alt="Tikko Logo" width={100} height={100} className={styles.rotatingLogo} />
+      </div>
+      <h1 className={styles.title}>الأسئلة المتكررة</h1>
+      <p className={styles.subtitle}>عملة Tikko تجمع بين المستقبل الذهبي والطموح المجتمعي اللامحدود.</p>
+    </div>
   )
 }
