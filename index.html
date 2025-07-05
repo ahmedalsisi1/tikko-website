@@ -1,47 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tikko | Official Website</title>
-    <style>
-        body {
-            background-color: #000;
-            color: gold;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        header {
-            padding: 20px;
-        }
-        nav a {
-            color: gold;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .logo {
-            width: 150px;
-            animation: spin 10s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotateY(0deg); }
-            100% { transform: rotateY(360deg); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Tikko - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="tikko-logo.png" alt="Tikko Logo" class="logo">
-        <h1 style="animation: glow 2s infinite alternate;">Welcome to Tikko</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
-    <p>Tikko is the rising digital token for a new generation. Explore our pages to learn more.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="wallet.html">Wallet</a>
+    <a href="use-cases.html">Use Cases</a>
+    <a href="faq.html">FAQ</a>
+    <a href="golden-future.html">Golden Future</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+  </nav>
+  <main>
+    <h1>Welcome to Tikko</h1>
+    <p>A golden digital currency backed by a powerful community.</p>
+  </main>
+  <div id="ticker"></div>
+  <script src="ticker.js"></script>
 </body>
 </html>
