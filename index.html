@@ -1,25 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tikko - Home</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Tikko - Translate Demo</title>
 </head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="wallet.html">Wallet</a>
-    <a href="use-cases.html">Use Cases</a>
-    <a href="faq.html">FAQ</a>
-    <a href="golden-future.html">Golden Future</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-  </nav>
-  <main>
+<body style="background-color: black; color: gold; font-family: sans-serif; text-align: center; padding: 50px;">
     <h1>Welcome to Tikko</h1>
-    <p>A golden digital currency backed by a powerful community.</p>
-  </main>
-  <div id="ticker"></div>
-  <script src="ticker.js"></script>
+    <p>Your gateway to a transparent and community-driven crypto experience.</p>
+
+    <!-- Google Translate Element -->
+    <div id="google_translate_element" style="margin-top: 20px;"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'ar,de,es,fr,it,ru,tr,zh-CN,ja,ko,pt',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        }, 'google_translate_element');
+      }
+    </script>
+
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 </body>
 </html>
