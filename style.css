@@ -3,22 +3,8 @@ body {
   background-color: #000;
   color: gold;
   font-family: Arial, sans-serif;
-  padding: 30px;
-}
-h1 {
-  font-size: 2em;
-  color: gold;
-}
-p {
-  font-size: 1.1em;
-  margin: 20px 0;
-}
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-ul li {
-  margin-bottom: 10px;
+  text-align: center;
+  padding: 20px;
 }
 .feature-btn {
   display: inline-block;
