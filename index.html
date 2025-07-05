@@ -3,28 +3,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tikko - Translate Demo</title>
+    <title>Tikko Auto Translate</title>
+    <script>
+        (function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            const supportedLanguages = ['ar', 'tr', 'fr', 'es', 'de', 'zh', 'ru'];
+            const baseLang = 'en';
+
+            if (userLang.startsWith(baseLang)) return;
+
+            const langCode = userLang.split('-')[0];
+            if (supportedLanguages.includes(langCode)) {
+                const currentUrl = window.location.href;
+                const googleTranslateUrl = "https://translate.google.com/translate?hl=" + langCode + "&sl=" + baseLang + "&tl=" + langCode + "&u=" + encodeURIComponent(currentUrl);
+                window.location.href = googleTranslateUrl;
+            }
+        })();
+    </script>
 </head>
-<body style="background-color: black; color: gold; font-family: sans-serif; text-align: center; padding: 50px;">
+<body>
     <h1>Welcome to Tikko</h1>
-    <p>Your gateway to a transparent and community-driven crypto experience.</p>
-
-    <!-- Google Translate Element -->
-    <div id="google_translate_element" style="margin-top: 20px;"></div>
-
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'ar,de,es,fr,it,ru,tr,zh-CN,ja,ko,pt',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
-        }, 'google_translate_element');
-      }
-    </script>
-
-    <script type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-    </script>
+    <p>This page will auto-translate to your browser's language.</p>
 </body>
 </html>
